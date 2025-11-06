@@ -1,0 +1,839 @@
+@use "../common/variables" as *;
+@use "../common/fonts" as *;
+@use "../common/mixins" as *;
+
+.frame {
+  max-width: 144rem;
+  width: 100%;
+  height: auto;
+
+  .header-frame {
+    @include header-frame;
+  }
+
+  .breadcrumb-section {
+    max-width: 144rem;
+    width: 100%;
+    border-bottom: 1px solid $border;
+    padding: 1.6rem 11.2rem;
+    background: $base-white;
+
+    .breadcrumb {
+      @include flex-row;
+
+      li {
+        align-items: center;
+        @include flex-row;
+
+        img {
+          padding-left: 0.92rem;
+        }
+
+        a {
+          text-decoration: none;
+          @include inter(400, 1.4rem, 2rem, $font-breadcrumb);
+          padding-left: 0.8rem;
+
+          &:hover {
+            color: $base-brown;
+          }
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+
+        &:last-child {
+          @include inter(500, 1.4rem, 2rem, $base-brown);
+
+          span {
+            padding-left: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .pain-au {
+    width: 100%;
+    max-width: 144rem;
+    height: auto;
+    background: $base-white;
+    padding: 4.8rem 11.2rem;
+
+    .pain-container {
+      max-width: 121.6rem;
+      width: 100%;
+      @include flex-row;
+      gap: 4.8rem;
+
+      .pain-gallery {
+        width: 100%;
+        max-width: 58.4rem;
+        @include flex-column;
+        gap: 1.6rem;
+
+        .hero {
+          width: 100%;
+          height: 38.4rem;
+          border-radius: 0.8rem;
+          overflow: hidden;
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 10%),
+            0px 4px 6px -4px rgba(0, 0, 0, 10%);
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .hero-container {
+          width: 100%;
+          @include flex-row;
+          gap: 1.6rem;
+
+          div {
+            width: 100%;
+            border-radius: 0.8rem;
+            border: 1px solid $border;
+            height: 9.6rem;
+            border-radius: 0.8rem;
+
+            &:first-child {
+              border: 2px solid $base-brown;
+            }
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              border-radius: 0.8rem;
+            }
+          }
+        }
+      }
+
+      .pain-cart {
+        max-width: 58.4rem;
+        width: 100%;
+        @include flex-column;
+        gap: 2.4rem;
+        height: auto;
+
+        .cart-price {
+          width: 100%;
+          @include flex-column;
+          gap: 0.8rem;
+
+          h2 {
+            @include playfair(700, 3.6rem, 4rem, $base-brown);
+          }
+
+          .price-stars {
+            @include flex-row;
+            align-items: center;
+            gap: 1.6rem;
+
+            .price-start-item {
+              @include flex-row;
+
+              img {
+                width: 1.8rem;
+                height: 1.6rem;
+              }
+            }
+
+            span {
+              @include inter(400, 1.6rem, 2.4rem, $font-gray-63, 0.01rem);
+            }
+          }
+
+          p {
+            padding-top: 0.8rem;
+            @include inter(700, 3rem, 3.6rem, $base-brown, 0.07rem);
+          }
+        }
+
+        .cart-description {
+          p {
+            @include inter(400, 1.8rem, 2.925rem, $font-gray-51, 0.0155rem);
+          }
+        }
+
+        .cart-quantity {
+          width: 100%;
+          @include flex-row;
+          align-items: center;
+          gap: 1.6rem;
+
+          p {
+            @include inter(500, 1.8rem, 2.8rem, $base-brown, 0.025rem);
+          }
+
+          .quantity-cont {
+            @include flex-row;
+            align-items: center;
+            width: 11.1rem;
+            height: 4.2rem;
+            border-radius: 0.6rem;
+            border: 1px solid $border;
+
+            span {
+              border: 0px solid $border;
+              border-left-width: 1px;
+              border-right-width: 1px;
+              width: 4.2rem;
+              text-align: center;
+              padding: 0.8rem 1.7rem;
+              @include inter(400, 1.6rem, 2.4rem, $font-black);
+            }
+
+            button {
+              height: 100%;
+              padding: 0.8rem 1.2rem;
+              border: none;
+              background: none;
+              text-align: center;
+              @include inter(400, 1.6rem, 2.4rem, $base-brown);
+
+              &:hover {
+                background: #f3f4f6;
+              }
+            }
+          }
+        }
+
+        .cart-buy {
+          width: 100%;
+          @include flex-row;
+          gap: 1.6rem;
+
+          button:first-child {
+            @include brown-button(100%, 4.8rem);
+            @include flex-row;
+            align-items: center;
+            gap: 1.2rem;
+            @include inter(600, 1.6rem, 2.4rem, $base-white, 0.01rem);
+          }
+
+          button:last-child {
+            @include clear-button(5.5rem, 4.8rem);
+            border: 1px solid $base-brown;
+            background-image: url("../../../img/svg/item/heart-brown.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:hover {
+              background-image: url("../../../img/svg/item/heart-white.svg");
+            }
+          }
+        }
+
+        .cart-icons {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          padding-top: 2.4rem;
+          gap: 1.6rem;
+
+          .icons-item {
+            @include flex-row;
+            align-items: center;
+            gap: 0.8rem;
+
+            span {
+              @include inter(400, 1.4rem, 2rem, $font-gray-63);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-frame {
+    max-width: 144rem;
+    width: 100%;
+    min-height: 34.9rem;
+    height: auto;
+  }
+
+  .description {
+    width: 100%;
+    max-width: 144rem;
+    padding: 4.8rem 11.2rem;
+    background: $bg-skin;
+
+    .description-container {
+      box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 10%),
+        0px 4px 6px -4px rgba(0, 0, 0, 10%);
+      width: 100%;
+      max-width: 121.6rem;
+      background: $base-white;
+      border-radius: 0.8rem;
+      height: auto;
+      padding-bottom: 3.2rem;
+      @include flex-column;
+      gap: 3.2rem;
+
+      .description-header {
+        width: 100%;
+        border-bottom: 1px solid $border;
+
+        button {
+          border: none;
+          background: none;
+          height: 5.8rem;
+          padding: 1.7rem 3.2rem;
+          @include inter(400, 1.6rem, 2.4rem, $font-breadcrumb);
+
+          &:hover {
+            color: $base-brown;
+          }
+
+          &:first-child {
+            color: $base-brown;
+            letter-spacing: 0.01rem;
+            border-bottom: 2px solid $base-brown;
+          }
+
+          &:last-child {
+            padding: 1.7rem 3rem;
+          }
+        }
+      }
+
+      .description-content {
+        @include flex-column;
+        gap: 1.6rem;
+        padding: 0 3.2rem;
+
+        h3 {
+          @include playfair(600, 2.4rem, 3.2rem, $base-brown);
+        }
+
+        p {
+          @include inter(400, 1.6rem, 2.6rem, $font-gray-51, 0.00784rem);
+
+          .break {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .reviews {
+    width: 100%;
+    max-width: 144rem;
+    padding: 4.8rem 8rem;
+    height: auto;
+    background: $base-white;
+
+    .reviews-container {
+      width: 100%;
+      max-width: 128rem;
+      padding: 0 3.2rem;
+      @include flex-column;
+      gap: 3.2rem;
+
+      h3 {
+        @include playfair(700, 3rem, 3.6rem, $base-brown);
+      }
+
+      .reviews-overall {
+        @include flex-row;
+        gap: 3.2rem;
+        width: 100%;
+
+        .rating {
+          width: 100%;
+          max-width: 38.4rem;
+
+          .rating-container {
+            width: 100%;
+            height: auto;
+            background: $bg-skin;
+            border-radius: 0.8rem;
+            padding: 2.4rem;
+            @include flex-column;
+            gap: 1.5rem;
+
+            .rating-stars {
+              width: 100%;
+              @include flex-column;
+              align-items: center;
+              gap: 0.75rem;
+
+              h4 {
+                @include inter(700, 3.6rem, 4rem, $base-brown, 0.02rem);
+              }
+
+              .sstars {
+                img {
+                  width: 1.6rem;
+                  height: 1.6rem;
+                }
+              }
+
+              p {
+                @include inter(400, 1.6rem, 2.4rem, $font-gray-63);
+              }
+            }
+
+            .progress-bars {
+              @include flex-column;
+              gap: 0.8rem;
+
+              .bar-item {
+                @include flex-row;
+                align-items: center;
+
+                p {
+                  @include inter(400, 1.4rem, 2rem, $font-black);
+                }
+
+                .bar,
+                div {
+                  width: 100%;
+                  border-radius: 999.9rem;
+                  height: 0.8rem;
+                  background-color: $border;
+                  margin-left: 1.6rem;
+                  margin-right: 0.8rem;
+
+                  div {
+                    width: calc(100% - 15%);
+                    background-color: $circle-yellow;
+                    margin-left: 0;
+
+                    &.four {
+                      width: calc(100% * 0.1196);
+                    }
+
+                    &.three {
+                      width: calc(100% * 0.0198);
+                    }
+
+                    &.one {
+                      width: calc(100% * 0.009);
+                    }
+                  }
+                }
+
+                span {
+                  position: relative;
+                  @include inter(400, 1.4rem, 2rem, $font-gray-63);
+
+                  &.num-a {
+                    position: absolute;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .comments {
+          width: 100%;
+          max-width: 80rem;
+          @include flex-column;
+          gap: 2.4rem;
+
+          .comments-item {
+            width: 100%;
+            padding-bottom: 2.4rem;
+            border-bottom: 1px solid $border;
+            @include flex-row;
+
+            img {
+              width: 4.8rem;
+              height: 4.8rem;
+              border-radius: 999.9rem;
+            }
+
+            .comment-container {
+              width: 100%;
+              padding-left: 1.6rem;
+              @include flex-column;
+              gap: 0.7rem;
+
+              .comment-name {
+                @include flex-row;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                  @include inter(600, 1.6rem, 2.4rem, $base-brown);
+                }
+
+                span {
+                  @include inter(400, 1.4rem, 2rem, $font-breadcrumb);
+                }
+              }
+
+              .comment-stars {
+                img {
+                  width: 1.65rem;
+                  height: 1.6rem;
+                }
+              }
+
+              p {
+                @include inter(400, 1.6rem, 2.4rem, $font-gray-51, 0.006rem);
+
+                .rate-br {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        @include brown-button(100%, 4.8rem);
+        @include inter(600, 1.6rem, 2.4rem, $base-white);
+      }
+    }
+  }
+
+  .advice {
+    width: 100%;
+    max-width: 144rem;
+    padding: 6.4rem 8rem;
+    background: $bg-skin;
+
+    .advice-container {
+      width: 100%;
+      max-width: 128rem;
+      padding: 0 3.2rem;
+      @include flex-column;
+      gap: 3.2rem;
+      align-items: center;
+
+      h3 {
+        @include playfair(700, 3rem, 3.6rem, $base-brown);
+      }
+
+      .advice-cards {
+        width: 100%;
+        max-width: 121.6rem;
+        gap: 3.2rem;
+        @include flex-row;
+
+        .past-item {
+          @include pastrie-card;
+          max-width: 28rem;
+
+          .past-img {
+            height: 19.2rem;
+          }
+
+          .past-desc {
+            gap: 0.8rem;
+            padding: 1.6rem;
+
+            h4 {
+              @include playfair(600, 1.8rem, 2.8rem, $base-brown);
+            }
+
+            p {
+              @include inter(400, 1.4rem, 2rem, $font-gray-63);
+            }
+
+            div {
+              padding-top: 0.4rem;
+
+              span {
+                @include inter(700, 2rem, 2.8rem, $base-brown, 0.015rem);
+              }
+
+              button {
+                @include brown-button(10.1rem, 2.8rem, $base-brown);
+                @include inter(400, 1.4rem, 2rem, $base-white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-frame {
+    @include footer-frame;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .frame {
+    max-width: 192rem;
+
+    .header-frame,
+    .breadcrumb-section,
+    .pain-au,
+    .footer-frame,
+    .description,
+    .reviews,
+    .advice {
+      max-width: 192rem;
+    }
+
+    .pain-au .pain-container,
+    .description .description-container,
+    .reviews .reviews-container,
+    .advice .advice-container {
+      max-width: 162rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .frame {
+    .breadcrumb-section {
+      padding: 1.6rem 3.2rem;
+    }
+    .pain-au {
+      padding: 4.8rem 3.2rem;
+    }
+    .description {
+      padding: 4.8rem 3.2rem;
+    }
+    .reviews {
+      padding: 4.8rem 0;
+      .reviews-container {
+        .reviews-overall {
+          .rating {
+            max-width: 29.8rem;
+            .rating-container {
+              .progress-bars {
+                .bar-item {
+                  .bar {
+                    margin-right: 2.5rem;
+                    div {
+                      &.four,
+                      &.three,
+                      &.one {
+                        width: calc(100% * 0.1196);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .comments {
+            .comments-item {
+              .comment-container {
+                p {
+                  .rate-br {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .advice {
+      padding: 6.4rem 0;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .frame {
+    .advice {
+      padding: 6.4rem 0 1.2rem 0;
+      .advice-container {
+        padding: 0 2.4rem;
+        .advice-cards {
+          flex-wrap: wrap;
+          .past-item {
+            max-width: 36rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .frame {
+    .breadcrumb-section {
+      padding: 1.6rem 2.4rem;
+    }
+    .pain-au {
+      padding: 4.8rem 2.4rem;
+      .pain-container {
+        flex-direction: column;
+        .pain-gallery {
+          max-width: 75.2rem;
+        }
+        .pain-cart {
+          max-width: 75.2rem;
+        }
+      }
+    }
+    .description {
+      padding: 4.8rem 2.4rem;
+      .description-container {
+        .description-content {
+          p {
+            .break {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+    .reviews {
+      .reviews-container {
+        padding: 0 2.4rem;
+        .reviews-overall {
+          flex-direction: column;
+          .rating {
+            max-width: 75.2rem;
+            .rating-container {
+              .progress-bars {
+                .bar-item {
+                  .bar {
+                    div {
+                      &.four {
+                        width: calc(100% * 0.1196);
+                      }
+                      &.three {
+                        width: calc(100% * 0.0198);
+                      }
+                      &.one {
+                        width: calc(100% * 0.009);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .comments {
+            .comments-item {
+              .comment-container {
+                p {
+                  .rate-br {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-frame {
+      min-height: 84.1rem;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .frame {
+    .footer-frame {
+      min-height: 84.1rem;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .frame {
+    .breadcrumb-section {
+      padding: 1.6rem 1.6rem;
+    }
+    .pain-au {
+      padding: 4.8rem 1.6rem;
+      .pain-container {
+        flex-direction: column;
+        .pain-gallery {
+          max-width: 75.2rem;
+        }
+        .pain-cart {
+          max-width: 75.2rem;
+        }
+      }
+    }
+    .description {
+      padding: 4.8rem 1.6rem;
+      .description-container {
+        .description-header {
+          flex-wrap: nowrap;
+          button {
+            height: 8rem;
+            &:nth-child(2) {
+              padding: 1.7rem 2rem 1.7rem 3.2rem;
+            }
+            &:nth-child(3) {
+              padding: 1.7rem 1rem 1.7rem 4.2rem;
+            }
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+        .description-content {
+          p {
+            .break {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .reviews {
+      .reviews-container {
+        padding: 0 1.6rem;
+        .reviews-overall {
+          .rating {
+            max-width: 75.2rem;
+            .rating-container {
+              .progress-bars {
+                .bar-item {
+                  .bar {
+                    div {
+                      &.four {
+                        width: calc(100% * 0.1196);
+                      }
+                      &.three {
+                        width: calc(100% * 0.0198);
+                      }
+                      &.one {
+                        width: calc(100% * 0.009);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .comments {
+            .comments-item {
+              .comment-container {
+                p {
+                  .rate-br {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .advice {
+      padding: 6.4rem 0;
+      .advice-container {
+        padding: 0 1.6rem;
+        .advice-cards {
+          flex-wrap: wrap;
+          .past-item {
+            max-width: 41.8rem;
+          }
+        }
+      }
+    }
+  }
+}

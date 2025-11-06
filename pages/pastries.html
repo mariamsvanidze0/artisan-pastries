@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Browse our handcrafted pastries made with love and premium ingredients."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/pics/pastries/classic.png" type="image/png" />
+    <link rel="stylesheet" href="../styles/css/base/reset.css" />
+    <link rel="stylesheet" href="../styles/css/global.css" />
+    <link rel="stylesheet" href="../styles/css/pages/pastries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Our Pastries | Sweet Delights</title>
+  </head>
+  <body>
+    <div class="frame">
+      <!-- header -->
+      <iframe
+        src="../components/header.html"
+        class="header-frame"
+        scrolling="no"
+        frameborder="0"
+        title="Website header navigation"
+        aria-label="Main navigation"
+      ></iframe>
+      <main>
+        <section class="our-pastries" aria-labelledby="our-pastries-heading">
+          <div class="our-pastries-container">
+            <h1 id="our-pastries-heading">Our Pastries</h1>
+            <p>
+              Discover our exquisite collection of handcrafted pastries, each
+              made with premium ingredients and traditional techniques passed
+              down through generations.
+            </p>
+          </div>
+        </section>
+        <section class="pastries-filter" aria-label="Filter pastries">
+          <div class="filter-container">
+            <div class="filter-by">
+              <p>Filter by Category:</p>
+              <div
+                class="filter-by-buttons"
+                role="group"
+                aria-label="Category filters"
+              >
+                <button>All</button>
+                <button>Croissants</button>
+                <button>Éclairs</button>
+                <button>Danish</button>
+                <button>Macarons</button>
+                <button>Tarts</button>
+              </div>
+            </div>
+            <div class="price-range" aria-label="Price and sorting">
+              <div class="price">
+                <p>Price Range:</p>
+                <span>Price:</span>
+                <button>All Prices</button>
+              </div>
+              <div class="sort">
+                <p>Sort by:</p>
+                <span>Sort:</span>
+                <button>Featured</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pastries-gallery" aria-label="Pastry gallery">
+          <div class="gallery-container">
+            <div class="pastries-items">
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Classic Butter Croissant details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <div class="sticker">Popular</div>
+                    <img
+                      src="../img/pics/pastries/classic.png"
+                      alt="Classic Butter Croissant"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Classic Butter Croissant</h4>
+                    <p>
+                      Traditional French croissant with 64 layers of buttery
+                      perfection
+                    </p>
+                    <div class="past-price">
+                      <span>$2.95</span>
+                      <button aria-label="Add Classic Butter Croissant to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Almond Croissant details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/almond.png"
+                      alt="Almond Croissant"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Almond Croissant</h4>
+                    <p>
+                      Filled with almond cream and topped with sliced almonds
+                    </p>
+                    <div class="past-price">
+                      <span>$4.25</span>
+                      <button aria-label="Add Almond Croissant to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Pain au Chocolat details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/pain.png"
+                      alt="Pain au Chocolat"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Pain au Chocolat</h4>
+                    <p>
+                      Croissant dough wrapped around rich Belgian dark chocolate
+                    </p>
+                    <div class="past-price">
+                      <span>$3.50</span>
+                      <button aria-label="Add Pain au Chocolat to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Vanilla Éclair details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <div class="sticker new">New</div>
+                    <img
+                      src="../img/pics/pastries/vanilla.png"
+                      alt="Vanilla Éclair"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Vanilla Éclair</h4>
+                    <p>
+                      Choux pastry filled with vanilla pastry cream and
+                      chocolate glaze
+                    </p>
+                    <div class="past-price">
+                      <span>$4.75</span>
+                      <button aria-label="Add Vanilla Éclair to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Coffee Éclair details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/coffee.png"
+                      alt="Coffee Éclair"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Coffee Éclair</h4>
+                    <p>Espresso-infused cream with caramel glaze</p>
+                    <div class="past-price">
+                      <span>$5.25</span>
+                      <button aria-label="Add Coffee Éclair to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Strawberry Danish details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/straw.png"
+                      alt="Strawberry Danish"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Strawberry Danish</h4>
+                    <p>Flaky pastry with cream cheese and fresh strawberries</p>
+                    <div class="past-price">
+                      <span>$4.25</span>
+                      <button aria-label="Add Strawberry Danish to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Apple Cinnamon Danish details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/apple.png"
+                      alt="Apple Cinnamon Danish"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Apple Cinnamon Danish</h4>
+                    <p>Spiced apple filling with cinnamon and brown sugar</p>
+                    <div class="past-price">
+                      <span>$3.95</span>
+                      <button aria-label="Add Apple Cinnamon Danish to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Macaron Box details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img src="../img/pics/pastries/mac.png" alt="Macaron Box" />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Macaron Box (6 pcs)</h4>
+                    <p>
+                      Assorted flavors: vanilla, chocolate, raspberry, pistachio
+                    </p>
+                    <div class="past-price">
+                      <span>$18.50</span>
+                      <button aria-label="Add Macaron Box to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Mixed Berry Tart details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/clas.png"
+                      alt="Mixed Berry Tart"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Mixed Berry Tart</h4>
+                    <p>
+                      Vanilla custard with fresh strawberries, blueberries, and
+                      raspberries
+                    </p>
+                    <div class="past-price">
+                      <span>$6.75</span>
+                      <button aria-label="Add Mixed Berry Tart to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Lemon Meringue Tart details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/lemon.png"
+                      alt="Lemon Meringue Tart"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Lemon Meringue Tart</h4>
+                    <p>Tangy lemon curd topped with fluffy toasted meringue</p>
+                    <div class="past-price">
+                      <span>$5.95</span>
+                      <button aria-label="Add Lemon Meringue Tart to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Chocolate Ganache Tart details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/chocolate.png"
+                      alt="Chocolate Ganache Tart"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Chocolate Ganache Tart</h4>
+                    <p>Rich dark chocolate ganache in a crispy pastry shell</p>
+                    <div class="past-price">
+                      <span>$7.25</span>
+                      <button aria-label="Add Chocolate Ganache Tart to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- item -->
+              <a
+                href="./item.html"
+                class="past-link"
+                aria-label="Cream Puff details"
+              >
+                <div class="past-item">
+                  <div class="past-img">
+                    <img
+                      src="../img/pics/pastries/cream.png"
+                      alt="Cream Puff"
+                    />
+                  </div>
+                  <div class="past-desc">
+                    <h4>Cream Puff</h4>
+                    <p>Light choux pastry filled with fresh whipped cream</p>
+                    <div class="past-price">
+                      <span>$3.25</span>
+                      <button aria-label="Add Cream Puff to cart">
+                        <img src="../img/svg/plus.svg" alt="" />
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="pagination" aria-label="Pagination">
+              <div class="pagination-pages">
+                <button class="arrow-button l" aria-label="Previous page">
+                  <img src="../img/svg/arrow-left.svg" alt="" />
+                </button>
+                <button class="active" aria-current="page">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="arrow-button r" aria-label="Next page">
+                  <img src="../img/svg/arrow-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="special-orders"
+          aria-labelledby="special-orders-heading"
+        >
+          <div class="orders-container">
+            <h3 id="special-orders-heading">Special Bulk Orders</h3>
+            <p>
+              Order 2 dozen or more pastries and save 15%! Perfect for events,
+              meetings, or celebrations.
+            </p>
+            <button aria-label="Contact for bulk pastry orders">
+              Contact for Bulk Orders
+            </button>
+          </div>
+        </section>
+      </main>
+      <iframe
+        src="../components/footer.html"
+        class="footer-frame"
+        scrolling="no"
+        frameborder="0"
+        title="Website footer"
+        aria-label="Footer section"
+      ></iframe>
+    </div>
+  </body>
+</html>

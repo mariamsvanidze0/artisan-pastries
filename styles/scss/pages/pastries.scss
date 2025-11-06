@@ -1,0 +1,564 @@
+@use "../common/variables" as *;
+@use "../common/fonts" as *;
+@use "../common/mixins" as *;
+
+.frame {
+  max-width: 144rem;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+
+  .header-frame {
+    @include header-frame;
+  }
+
+  .our-pastries {
+    width: 100%;
+    max-width: 144rem;
+    height: auto;
+    background: $bg-pink-gradient;
+    padding: 12rem 30.4rem;
+
+    .our-pastries-container {
+      max-width: 83.2rem;
+      width: 100%;
+      height: auto;
+      @include flex-column;
+      padding: 0 3.2rem;
+      gap: 1.6rem;
+      align-items: center;
+
+      h1 {
+        @include playfair(700, 6rem, 6rem, $base-brown);
+      }
+
+      p {
+        @include inter(400, 2rem, 2.8rem, $font-gray-51, 0.027rem);
+        width: 100%;
+        max-width: 69.4rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .pastries-filter {
+    width: 100%;
+    max-width: 144rem;
+    height: auto;
+    padding: 3.2rem 11.2rem 3.3rem;
+    background: $base-white;
+    border-bottom: 1px solid $border;
+
+    .filter-container {
+      width: 100%;
+      max-width: 121.6rem;
+      @include flex-row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .filter-by {
+        width: 100%;
+        max-width: 69.9rem;
+        @include flex-row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        p {
+          @include inter(600, 1.8rem, 2.8rem, $base-brown, 0.009rem);
+        }
+
+        .filter-by-buttons {
+          width: 100%;
+          max-width: 53.7rem;
+          @include flex-row;
+          padding-left: 2.4rem;
+          gap: 0.82rem;
+
+          button:first-child {
+            @include brown-button(4.9rem, 3.6rem, $base-brown, 1.4rem);
+            @include inter(500);
+          }
+
+          button {
+            @include gray-button;
+          }
+        }
+      }
+
+      .price-range {
+        width: 100%;
+        max-width: 44.483rem;
+        @include flex-row;
+        align-items: center;
+        gap: 0.001rem;
+
+        .price,
+        .sort {
+          @include flex-row;
+          align-items: center;
+          width: 100%;
+
+          p,
+          span {
+            @include inter(500, 1.4rem, 2rem, $base-brown);
+            white-space: nowrap;
+          }
+
+          span {
+            display: none;
+          }
+
+          button {
+            margin-left: 0.8rem;
+            height: 3.6rem;
+            border-radius: 0.6rem;
+            border: 1px solid #d1d5db;
+            background: $bg-gray-ef;
+            @include inter(400, 1.4rem, 1.7rem, $font-black);
+          }
+        }
+
+        .price {
+          max-width: 20.034rem;
+
+          button {
+            padding: 0.9rem 2.9rem 0.9rem 1.7rem;
+            white-space: nowrap;
+          }
+        }
+
+        .sort {
+          max-width: 24.4rem;
+          padding-left: 1.6rem;
+
+          button {
+            padding: 0.9rem 9.148rem 0.9rem 1.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .pastries-gallery {
+    width: 100%;
+    max-width: 144rem;
+    padding: 4.8rem 8rem;
+    background-color: $bg-skin;
+    height: auto;
+
+    .gallery-container {
+      max-width: 128rem;
+      width: 100%;
+      padding: 0 3.2rem;
+      @include flex-column;
+      gap: 4.8rem;
+
+      .pastries-items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3.2rem;
+
+        a {
+          text-decoration: none;
+
+          .past-item {
+            @include pastrie-card;
+            height: 100%;
+            max-width: 28rem;
+
+            .past-img {
+              overflow: hidden;
+              border-radius: 0.8rem 0.8rem 0 0;
+
+              img {
+                transition: transform 0.4s ease;
+              }
+            }
+
+            &:hover {
+              cursor: pointer;
+              box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 10%),
+                0px 8px 10px -6px rgba(0, 0, 0, 10%);
+
+              .past-img img {
+                transform: scale(1.05);
+              }
+            }
+
+            .past-desc {
+              p {
+                @include inter(400, 1.4rem, 2rem, $font-gray-63, 0);
+              }
+
+              div {
+                button {
+                  @include brown-button(8.5rem, 4rem, $base-brown);
+                  @include inter(400, 1.6rem, 2.4rem, $base-white);
+                  @include flex-row;
+                  align-items: center;
+                  gap: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .pagination {
+        width: 100%;
+        max-width: 121.6rem;
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+
+        .pagination-pages {
+          max-width: 23.3rem;
+          width: 100%;
+          @include flex-row;
+          gap: 0.8rem;
+
+          button {
+            @include inter(400, 1.6rem, 2.4rem, $base-brown);
+            width: 4.4rem;
+            height: 4.2rem;
+            @include flex-row;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.7rem;
+            border: 1px solid $base-brown;
+            border-radius: 0.6rem;
+            background: none;
+
+            &:hover {
+              background: $base-brown;
+              color: $base-white;
+            }
+
+            &.active {
+              background: $base-brown;
+              @include inter(400, 1.6rem, 2.4rem, $base-white);
+              padding: 0.9rem 1.6rem;
+            }
+
+            &.arrow-button {
+              width: 3.6rem;
+              height: 4.2rem;
+              padding: 1.1rem 1.3rem;
+
+              &:hover {
+                background-repeat: no-repeat;
+                background-position: center;
+
+                img {
+                  opacity: 0;
+                }
+              }
+
+              &.l:hover {
+                background-image: url(../../../img/svg/arrow-white-l.svg);
+              }
+
+              &.r:hover {
+                background-image: url(../../../img/svg/arrow-white-r.svg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .special-orders {
+    width: 100%;
+    max-width: 144rem;
+    padding: 4.8rem 11.2rem;
+    background: $base-white;
+
+    .orders-container {
+      width: 100%;
+      max-width: 121.6rem;
+      border-radius: 0.8rem;
+      padding: 3.2rem;
+      @include flex-column;
+      gap: 1.6rem;
+      background: $bg-yellow-gradient;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        @include playfair(700, 3rem, 3.6rem, $base-brown);
+      }
+
+      p {
+        @include inter(400, 1.8rem, 2.8rem, $font-gray-51, 0.013rem);
+        padding-bottom: 0.8rem;
+      }
+
+      button {
+        @include brown-button(24.7rem, 4.8rem, $base-brown);
+        @include inter(600, 1.6rem, 2.4rem, $base-white);
+      }
+    }
+  }
+
+  .footer-frame {
+    @include footer-frame;
+  }
+}
+
+//media
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .frame {
+    max-width: 192rem;
+
+    .header-frame,
+    .our-pastries,
+    .pastries-filter,
+    .pastries-gallery,
+    .special-orders,
+    .footer-frame {
+      max-width: 192rem;
+    }
+
+    .our-pastries {
+      .our-pastries-container {
+        max-width: 110rem;
+      }
+    }
+
+    .pastries-filter .filter-container,
+    .pastries-gallery .gallery-container,
+    .special-orders .orders-container {
+      max-width: 160rem;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .frame {
+    .pastries-filter {
+      padding: 3.2rem 3.2rem 3.3rem;
+      .filter-container {
+        .filter-by {
+          max-width: 57.9rem;
+        }
+        .price-range {
+          max-width: 37.8rem;
+          .price,
+          .sort {
+            p {
+              display: none;
+            }
+            span {
+              display: block;
+            }
+          }
+          .price {
+            max-width: 20.034rem;
+
+            button {
+              padding: 0.9rem 3.1rem 0.9rem 1.4rem;
+            }
+          }
+          .sort {
+            button {
+              padding: 0.9rem 9.4rem 0.9rem 1.7rem;
+            }
+          }
+        }
+      }
+    }
+    .pastries-gallery {
+      padding: 4.8rem 0;
+      .gallery-container {
+        .pastries-items {
+          grid-template-columns: (repeat(3, 1fr));
+          a {
+            .past-item {
+              @include pastrie-card;
+              max-width: 29.8rem;
+              height: 100%;
+              .past-desc {
+                p {
+                  @include inter(400, 1.39rem, 2rem, $font-gray-63, 0);
+                }
+                div {
+                  button {
+                    @include brown-button(8.5rem, 4rem, $base-brown);
+                    @include inter(400, 1.6rem, 2.4rem, $base-white);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .frame {
+    .our-pastries {
+      padding: 12rem 9.6rem;
+    }
+
+    .special-orders {
+      padding: 4.8rem 3.2rem;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .frame {
+    .pastries-filter {
+      padding: 3.2rem 2.4rem 3.3rem;
+      .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+        .filter-by {
+          max-width: 75.2rem;
+          .filter-by-buttons {
+            flex-wrap: wrap;
+          }
+        }
+        .price-range {
+          max-width: 75.2rem;
+          .price,
+          .sort {
+            p {
+              display: block;
+            }
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .frame {
+    .our-pastries {
+      padding: 12.6rem 0;
+      .our-pastries-container {
+        padding: 0 2.4rem;
+        h1 {
+          @include playfair(700, 4.8rem, 4.8rem);
+        }
+      }
+    }
+    .pastries-gallery {
+      .gallery-container {
+        padding: 0 2.4rem;
+        .pastries-items {
+          grid-template-columns: (repeat(2, 1fr));
+          a {
+            .past-item {
+              @include pastrie-card;
+              max-width: 36rem;
+              height: 100%;
+              .past-desc {
+                p {
+                  @include inter(400, 1.4rem, 2rem, $font-gray-63, 0);
+                }
+                div {
+                  button {
+                    @include brown-button(8.5rem, 4rem, $base-brown);
+                    @include inter(400, 1.6rem, 2.4rem, $base-white);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .special-orders {
+      padding: 4.8rem 2.4rem;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .frame {
+    .pastries-filter {
+      padding: 3.2rem 1.6rem 3.3rem;
+      .filter-container {
+        .price-range {
+          .price,
+          .sort {
+            p {
+              display: none;
+            }
+            span {
+              display: block;
+            }
+          }
+          .price {
+            span {
+              width: 6.34rem;
+            }
+          }
+        }
+      }
+    }
+    .pastries-gallery {
+      .gallery-container {
+        padding: 0 1.6rem;
+        .pastries-items {
+          grid-template-columns: (1fr);
+          a {
+            .past-item {
+              @include pastrie-card;
+              max-width: 41.8rem;
+              height: 100%;
+              .past-desc {
+                p {
+                  @include inter(400, 1.4rem, 2rem, $font-gray-63, 0);
+                }
+                div {
+                  button {
+                    @include brown-button(8.5rem, 4rem, $base-brown);
+                    @include inter(400, 1.6rem, 2.4rem, $base-white);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-frame {
+      min-height: 84.1rem;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .frame {
+    .our-pastries {
+      padding: 9.8rem 0;
+      .our-pastries-container {
+        padding: 0 1.6rem;
+      }
+    }
+
+    .special-orders {
+      padding: 4.8rem 1.6rem;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .frame {
+    .pastries-filter {
+      .filter-container {
+        .price-range {
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

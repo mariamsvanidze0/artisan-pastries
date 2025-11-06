@@ -1,0 +1,989 @@
+.frame {
+  max-width: 144rem;
+  width: 100%;
+  height: auto;
+}
+.frame .header-frame {
+  max-width: 144rem;
+  width: 100%;
+  height: 6.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.frame .breadcrumb-section {
+  max-width: 144rem;
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.6rem 11.2rem;
+  background: #ffffff;
+}
+.frame .breadcrumb-section .breadcrumb {
+  display: flex;
+  flex-direction: row;
+}
+.frame .breadcrumb-section .breadcrumb li {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.frame .breadcrumb-section .breadcrumb li img {
+  padding-left: 0.92rem;
+}
+.frame .breadcrumb-section .breadcrumb li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #6b7280;
+  padding-left: 0.8rem;
+}
+.frame .breadcrumb-section .breadcrumb li a:hover {
+  color: #8b4513;
+}
+.frame .breadcrumb-section .breadcrumb li a:first-child {
+  padding-left: 0;
+}
+.frame .breadcrumb-section .breadcrumb li:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #8b4513;
+}
+.frame .breadcrumb-section .breadcrumb li:last-child span {
+  padding-left: 0.9rem;
+}
+.frame .pain-au {
+  width: 100%;
+  max-width: 144rem;
+  height: auto;
+  background: #ffffff;
+  padding: 4.8rem 11.2rem;
+}
+.frame .pain-au .pain-container {
+  max-width: 121.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4.8rem;
+}
+.frame .pain-au .pain-container .pain-gallery {
+  width: 100%;
+  max-width: 58.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-gallery .hero {
+  width: 100%;
+  height: 38.4rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.frame .pain-au .pain-container .pain-gallery .hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.frame .pain-au .pain-container .pain-gallery .hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-gallery .hero-container div {
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid #e5e7eb;
+  height: 9.6rem;
+  border-radius: 0.8rem;
+}
+.frame .pain-au .pain-container .pain-gallery .hero-container div:first-child {
+  border: 2px solid #8b4513;
+}
+.frame .pain-au .pain-container .pain-gallery .hero-container div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+.frame .pain-au .pain-container .pain-cart {
+  max-width: 58.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  height: auto;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: #8b4513;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price .price-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price .price-stars .price-start-item {
+  display: flex;
+  flex-direction: row;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price .price-stars .price-start-item img {
+  width: 1.8rem;
+  height: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price .price-stars span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #4b5563;
+  letter-spacing: 0.01rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-price p {
+  padding-top: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #8b4513;
+  letter-spacing: 0.07rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-description p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.925rem;
+  color: #374151;
+  letter-spacing: 0.0155rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-quantity {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-quantity p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #8b4513;
+  letter-spacing: 0.025rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-quantity .quantity-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 11.1rem;
+  height: 4.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid #e5e7eb;
+}
+.frame .pain-au .pain-container .pain-cart .cart-quantity .quantity-cont span {
+  border: 0px solid #e5e7eb;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  width: 4.2rem;
+  text-align: center;
+  padding: 0.8rem 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000000;
+}
+.frame .pain-au .pain-container .pain-cart .cart-quantity .quantity-cont button {
+  height: 100%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: none;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #8b4513;
+}
+.frame .pain-au .pain-container .pain-cart .cart-quantity .quantity-cont button:hover {
+  background: #f3f4f6;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:first-child {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 4.8rem;
+  color: #ffffff;
+  background-color: #8b4513;
+  border: none;
+  font-size: 1.6rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:first-child:hover {
+  background: rgba(139, 69, 19, 0.9);
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  letter-spacing: 0.01rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 5.5rem;
+  height: 4.8rem;
+  background: none;
+  border: 2px solid #8b4513;
+  color: #8b4513;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:last-child:hover {
+  background-color: #8b4513;
+  color: #ffffff;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:last-child {
+  border: 1px solid #8b4513;
+  background-image: url("../../../img/svg/item/heart-brown.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.frame .pain-au .pain-container .pain-cart .cart-buy button:last-child:hover {
+  background-image: url("../../../img/svg/item/heart-white.svg");
+}
+.frame .pain-au .pain-container .pain-cart .cart-icons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2.4rem;
+  gap: 1.6rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-icons .icons-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+.frame .pain-au .pain-container .pain-cart .cart-icons .icons-item span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4b5563;
+}
+.frame .footer-frame {
+  max-width: 144rem;
+  width: 100%;
+  min-height: 34.9rem;
+  height: auto;
+}
+.frame .description {
+  width: 100%;
+  max-width: 144rem;
+  padding: 4.8rem 11.2rem;
+  background: #fff8f0;
+}
+.frame .description .description-container {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 121.6rem;
+  background: #ffffff;
+  border-radius: 0.8rem;
+  height: auto;
+  padding-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.frame .description .description-container .description-header {
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb;
+}
+.frame .description .description-container .description-header button {
+  border: none;
+  background: none;
+  height: 5.8rem;
+  padding: 1.7rem 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #6b7280;
+}
+.frame .description .description-container .description-header button:hover {
+  color: #8b4513;
+}
+.frame .description .description-container .description-header button:first-child {
+  color: #8b4513;
+  letter-spacing: 0.01rem;
+  border-bottom: 2px solid #8b4513;
+}
+.frame .description .description-container .description-header button:last-child {
+  padding: 1.7rem 3rem;
+}
+.frame .description .description-container .description-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0 3.2rem;
+}
+.frame .description .description-container .description-content h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #8b4513;
+}
+.frame .description .description-container .description-content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #374151;
+  letter-spacing: 0.00784rem;
+}
+.frame .description .description-container .description-content p .break {
+  display: none;
+}
+.frame .reviews {
+  width: 100%;
+  max-width: 144rem;
+  padding: 4.8rem 8rem;
+  height: auto;
+  background: #ffffff;
+}
+.frame .reviews .reviews-container {
+  width: 100%;
+  max-width: 128rem;
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.frame .reviews .reviews-container h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #8b4513;
+}
+.frame .reviews .reviews-container .reviews-overall {
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+  width: 100%;
+}
+.frame .reviews .reviews-container .reviews-overall .rating {
+  width: 100%;
+  max-width: 38.4rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container {
+  width: 100%;
+  height: auto;
+  background: #fff8f0;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .rating-stars {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .rating-stars h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: #8b4513;
+  letter-spacing: 0.02rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .rating-stars .sstars img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .rating-stars p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #4b5563;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #000000;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar,
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item div {
+  width: 100%;
+  border-radius: 999.9rem;
+  height: 0.8rem;
+  background-color: #e5e7eb;
+  margin-left: 1.6rem;
+  margin-right: 0.8rem;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div,
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item div div {
+  width: 85%;
+  background-color: #d4af37;
+  margin-left: 0;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.four,
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item div div.four {
+  width: 11.96%;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.three,
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item div div.three {
+  width: 1.98%;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.one,
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item div div.one {
+  width: 0.9%;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item span {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4b5563;
+}
+.frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item span.num-a {
+  position: absolute;
+}
+.frame .reviews .reviews-container .reviews-overall .comments {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item {
+  width: 100%;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: row;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 999.9rem;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container {
+  width: 100%;
+  padding-left: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container .comment-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container .comment-name p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #8b4513;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container .comment-name span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #6b7280;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container .comment-stars img {
+  width: 1.65rem;
+  height: 1.6rem;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #374151;
+  letter-spacing: 0.006rem;
+}
+.frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container p .rate-br {
+  display: none;
+}
+.frame .reviews .reviews-container button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 4.8rem;
+  color: #ffffff;
+  background-color: #8b4513;
+  border: none;
+  font-size: 1.6rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.frame .reviews .reviews-container button:hover {
+  background: rgba(139, 69, 19, 0.9);
+}
+.frame .reviews .reviews-container button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+.frame .advice {
+  width: 100%;
+  max-width: 144rem;
+  padding: 6.4rem 8rem;
+  background: #fff8f0;
+}
+.frame .advice .advice-container {
+  width: 100%;
+  max-width: 128rem;
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+.frame .advice .advice-container h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #8b4513;
+}
+.frame .advice .advice-container .advice-cards {
+  width: 100%;
+  max-width: 121.6rem;
+  gap: 3.2rem;
+  display: flex;
+  flex-direction: row;
+}
+.frame .advice .advice-container .advice-cards .past-item {
+  width: 100%;
+  max-width: 38.4rem;
+  height: auto;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.frame .advice .advice-container .advice-cards .past-item .past-img {
+  width: 100%;
+  height: 25.6rem;
+  position: relative;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-img .sticker {
+  position: absolute;
+  height: 2.4rem;
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  background: #d4af37;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+  z-index: 999;
+  left: calc(100% - 6.1rem - 1.1rem);
+  top: 1rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-img .sticker.new {
+  background: #ef4444;
+  left: calc(100% - 4.1rem - 1.1rem);
+}
+.frame .advice .advice-container .advice-cards .past-item .past-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2.4rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #8b4513;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #4b5563;
+  letter-spacing: 0.01rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #8b4513;
+  letter-spacing: 0.015rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 12rem;
+  height: 4rem;
+  color: #ffffff;
+  background-color: #8b4513;
+  border: none;
+  font-size: 1.6rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div button:hover {
+  background: rgba(139, 69, 19, 0.9);
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+.frame .advice .advice-container .advice-cards .past-item {
+  max-width: 28rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-img {
+  height: 19.2rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc {
+  gap: 0.8rem;
+  padding: 1.6rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #8b4513;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4b5563;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div {
+  padding-top: 0.4rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #8b4513;
+  letter-spacing: 0.015rem;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 10.1rem;
+  height: 2.8rem;
+  color: #ffffff;
+  background-color: #8b4513;
+  border: none;
+  font-size: 1.6rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div button:hover {
+  background: rgba(139, 69, 19, 0.9);
+}
+.frame .advice .advice-container .advice-cards .past-item .past-desc div button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+.frame .footer-frame {
+  max-width: 144rem;
+  width: 100%;
+  min-height: 34.9rem;
+  height: auto;
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .frame {
+    max-width: 192rem;
+  }
+  .frame .header-frame,
+  .frame .breadcrumb-section,
+  .frame .pain-au,
+  .frame .footer-frame,
+  .frame .description,
+  .frame .reviews,
+  .frame .advice {
+    max-width: 192rem;
+  }
+  .frame .pain-au .pain-container,
+  .frame .description .description-container,
+  .frame .reviews .reviews-container,
+  .frame .advice .advice-container {
+    max-width: 162rem;
+  }
+}
+@media (max-width: 1024px) {
+  .frame .breadcrumb-section {
+    padding: 1.6rem 3.2rem;
+  }
+  .frame .pain-au {
+    padding: 4.8rem 3.2rem;
+  }
+  .frame .description {
+    padding: 4.8rem 3.2rem;
+  }
+  .frame .reviews {
+    padding: 4.8rem 0;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating {
+    max-width: 29.8rem;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar {
+    margin-right: 2.5rem;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.four, .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.three, .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.one {
+    width: 11.96%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container p .rate-br {
+    display: block;
+  }
+  .frame .advice {
+    padding: 6.4rem 0;
+  }
+}
+@media (max-width: 1000px) {
+  .frame .advice {
+    padding: 6.4rem 0 1.2rem 0;
+  }
+  .frame .advice .advice-container {
+    padding: 0 2.4rem;
+  }
+  .frame .advice .advice-container .advice-cards {
+    flex-wrap: wrap;
+  }
+  .frame .advice .advice-container .advice-cards .past-item {
+    max-width: 36rem;
+  }
+}
+@media (max-width: 800px) {
+  .frame .breadcrumb-section {
+    padding: 1.6rem 2.4rem;
+  }
+  .frame .pain-au {
+    padding: 4.8rem 2.4rem;
+  }
+  .frame .pain-au .pain-container {
+    flex-direction: column;
+  }
+  .frame .pain-au .pain-container .pain-gallery {
+    max-width: 75.2rem;
+  }
+  .frame .pain-au .pain-container .pain-cart {
+    max-width: 75.2rem;
+  }
+  .frame .description {
+    padding: 4.8rem 2.4rem;
+  }
+  .frame .description .description-container .description-content p .break {
+    display: inline;
+  }
+  .frame .reviews .reviews-container {
+    padding: 0 2.4rem;
+  }
+  .frame .reviews .reviews-container .reviews-overall {
+    flex-direction: column;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating {
+    max-width: 75.2rem;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.four {
+    width: 11.96%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.three {
+    width: 1.98%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.one {
+    width: 0.9%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container p .rate-br {
+    display: none;
+  }
+  .frame .footer-frame {
+    min-height: 84.1rem;
+  }
+}
+@media (max-width: 650px) {
+  .frame .footer-frame {
+    min-height: 84.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .frame .breadcrumb-section {
+    padding: 1.6rem 1.6rem;
+  }
+  .frame .pain-au {
+    padding: 4.8rem 1.6rem;
+  }
+  .frame .pain-au .pain-container {
+    flex-direction: column;
+  }
+  .frame .pain-au .pain-container .pain-gallery {
+    max-width: 75.2rem;
+  }
+  .frame .pain-au .pain-container .pain-cart {
+    max-width: 75.2rem;
+  }
+  .frame .description {
+    padding: 4.8rem 1.6rem;
+  }
+  .frame .description .description-container .description-header {
+    flex-wrap: nowrap;
+  }
+  .frame .description .description-container .description-header button {
+    height: 8rem;
+  }
+  .frame .description .description-container .description-header button:nth-child(2) {
+    padding: 1.7rem 2rem 1.7rem 3.2rem;
+  }
+  .frame .description .description-container .description-header button:nth-child(3) {
+    padding: 1.7rem 1rem 1.7rem 4.2rem;
+  }
+  .frame .description .description-container .description-header button:last-child {
+    display: none;
+  }
+  .frame .description .description-container .description-content p .break {
+    display: none;
+  }
+  .frame .reviews .reviews-container {
+    padding: 0 1.6rem;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating {
+    max-width: 75.2rem;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.four {
+    width: 11.96%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.three {
+    width: 1.98%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .rating .rating-container .progress-bars .bar-item .bar div.one {
+    width: 0.9%;
+  }
+  .frame .reviews .reviews-container .reviews-overall .comments .comments-item .comment-container p .rate-br {
+    display: none;
+  }
+  .frame .advice {
+    padding: 6.4rem 0;
+  }
+  .frame .advice .advice-container {
+    padding: 0 1.6rem;
+  }
+  .frame .advice .advice-container .advice-cards {
+    flex-wrap: wrap;
+  }
+  .frame .advice .advice-container .advice-cards .past-item {
+    max-width: 41.8rem;
+  }
+}
+
+/*# sourceMappingURL=items.css.map */

@@ -1,0 +1,48 @@
+// font base
+@mixin shared-font-styles(
+  $font-size: null,
+  $line-height: null,
+  $color: null,
+  $letter-spacing: null
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+}
+
+// playfair
+@mixin playfair(
+  $weight: 700,
+  $font-size: null,
+  $line-height: null,
+  $color: null,
+  $letter-spacing: null
+) {
+  font-family: "Playfair Display", serif;
+  font-weight: $weight;
+  @include shared-font-styles(
+    $font-size,
+    $line-height,
+    $color,
+    $letter-spacing
+  );
+}
+
+// inter
+@mixin inter(
+  $weight: 400,
+  $font-size: null,
+  $line-height: null,
+  $color: null,
+  $letter-spacing: null
+) {
+  font-family: "Inter", sans-serif;
+  font-weight: $weight;
+  @include shared-font-styles(
+    $font-size,
+    $line-height,
+    $color,
+    $letter-spacing
+  );
+}

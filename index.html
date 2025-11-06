@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Handcrafted artisan pastries made fresh daily with love."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/pics/main/straw.png" type="image/png" />
+    <link rel="stylesheet" href="./styles/css/base/reset.css" />
+    <link rel="stylesheet" href="./styles/css/global.css" />
+    <link rel="stylesheet" href="./styles/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sweet Delights | Artisan Pastries</title>
+  </head>
+  <body>
+    <div class="frame">
+      <!-- header -->
+      <iframe
+        src="./components/header.html"
+        class="header-frame"
+        scrolling="no"
+        frameborder="0"
+        title="Website header navigation"
+        aria-label="Main navigation"
+      ></iframe>
+
+      <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="hero-container">
+            <div class="hero-description">
+              <h2 id="hero-heading">Artisan Pastries Made with Love</h2>
+              <p>
+                Discover our handcrafted pastries, made fresh daily with the
+                finest ingredients. From flaky croissants to decadent éclairs,
+                every bite is pure bliss.
+              </p>
+              <div class="hero-buttons" role="group" aria-label="Hero actions">
+                <a href="./pages/pastries.html" aria-label="Shop pastries now">
+                  <button>Shop Now</button>
+                </a>
+                <button aria-label="View full menu">View Menu</button>
+              </div>
+            </div>
+            <div class="hero-img">
+              <img
+                src="./img/pics/main/hero-img.png"
+                alt="Assorted artisan pastries"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="categories" aria-labelledby="categories-heading">
+          <div class="categories-container">
+            <div class="categories-header">
+              <h2 id="categories-heading">Our Categories</h2>
+              <p>Explore our delicious selection</p>
+            </div>
+            <div class="categories-items" role="list">
+              <div class="cat-item" role="listitem">
+                <div>
+                  <img src="./img/pics/main/croissant.png" alt="Croissant" />
+                </div>
+                <h4>Croissants</h4>
+                <p>Buttery, flaky, and irresistible</p>
+              </div>
+
+              <div class="cat-item" role="listitem">
+                <div>
+                  <img src="./img/pics/main/mshia.png" alt="Éclair" />
+                </div>
+                <h4>Éclairs</h4>
+                <p>Classic French choux pastry</p>
+              </div>
+
+              <div class="cat-item" role="listitem">
+                <div>
+                  <img src="./img/pics/main/macaroons.png" alt="Macarons" />
+                </div>
+                <h4>Macarons</h4>
+                <p>Delicate almond meringue cookies</p>
+              </div>
+
+              <div class="cat-item" role="listitem">
+                <div>
+                  <img src="./img/pics/main/tart.png" alt="Fruit tart" />
+                </div>
+                <h4>Tarts</h4>
+                <p>Fresh fruit and creamy custard</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="offer" aria-labelledby="offer-heading">
+          <div class="offer-container">
+            <h2 id="offer-heading">Special Offer</h2>
+            <p>Buy 2 Dozen Pastries, Get 20% Off!</p>
+            <span
+              >Perfect for parties, meetings, or treating yourself. Valid until
+              end of month.</span
+            >
+            <button aria-label="Claim special offer">Claim Offer</button>
+          </div>
+        </section>
+
+        <section class="pastries" aria-labelledby="featured-heading">
+          <div class="pastries-container">
+            <div class="pastries-header">
+              <h2 id="featured-heading">Featured Pastries</h2>
+              <p>Our most popular creations</p>
+            </div>
+            <div class="pastries-items" role="list">
+              <div class="past-item" role="listitem">
+                <div class="past-img">
+                  <img
+                    src="./img/pics/main/painau.png"
+                    alt="Pain au Chocolat"
+                  />
+                </div>
+                <div class="past-desc">
+                  <h4>Pain au Chocolat</h4>
+                  <p>
+                    Buttery croissant dough wrapped around rich dark chocolate
+                  </p>
+                  <div class="past-price">
+                    <span>$3.50</span>
+                    <button aria-label="Add Pain au Chocolat to cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="past-item" role="listitem">
+                <div class="past-img">
+                  <img
+                    src="./img/pics/main/straw.png"
+                    alt="Strawberry Danish"
+                  />
+                </div>
+                <div class="past-desc">
+                  <h4>Strawberry Danish</h4>
+                  <p>Flaky pastry with cream cheese and fresh strawberries</p>
+                  <div class="past-price">
+                    <span>$4.25</span>
+                    <button aria-label="Add Strawberry Danish to cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="past-item" role="listitem">
+                <div class="past-img">
+                  <img src="./img/pics/main/vanila.png" alt="Vanilla Éclair" />
+                </div>
+                <div class="past-desc">
+                  <h4>Vanilla Éclair</h4>
+                  <p>
+                    Choux pastry filled with vanilla cream and chocolate glaze
+                  </p>
+                  <div class="past-price">
+                    <span>$4.75</span>
+                    <button aria-label="Add Vanilla Éclair to cart">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews" aria-labelledby="reviews-heading">
+          <div class="reviews-container">
+            <h2 id="reviews-heading">What Our Customers Say</h2>
+            <div class="reviews-items" role="list">
+              <div class="rev-item" role="listitem">
+                <div class="person">
+                  <div class="pers-mg">
+                    <img
+                      src="./img/pics/main/pers1.jpg"
+                      alt="Photo of Sarah Johnson"
+                    />
+                  </div>
+                  <div class="name-stars">
+                    <p>Sarah Johnson</p>
+                    <div class="stars" aria-label="5 star rating">
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  "The best pastries in town! Every bite is pure heaven. My
+                  family absolutely loves their croissants."
+                </p>
+              </div>
+
+              <div class="rev-item" role="listitem">
+                <div class="person">
+                  <div class="pers-mg">
+                    <img
+                      src="./img/pics/main/pers2.jpg"
+                      alt="Photo of Mike Chen"
+                    />
+                  </div>
+                  <div class="name-stars">
+                    <p>Mike Chen</p>
+                    <div class="stars" aria-label="5 star rating">
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  "Exceptional quality and service. The éclairs are to die for!
+                  I order from here weekly."
+                </p>
+              </div>
+
+              <div class="rev-item" role="listitem">
+                <div class="person">
+                  <div class="pers-mg">
+                    <img
+                      src="./img/pics/main/pers3.jpg"
+                      alt="Photo of Emily Davis"
+                    />
+                  </div>
+                  <div class="name-stars">
+                    <p>Emily Davis</p>
+                    <div class="stars" aria-label="5 star rating">
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                      <img src="./img/svg/star.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  "Fresh, delicious, and beautifully presented. Perfect for
+                  special occasions and everyday treats!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <iframe
+        src="./components/footer.html"
+        class="footer-frame"
+        scrolling="no"
+        frameborder="0"
+        title="Website footer"
+        aria-label="Footer section"
+      ></iframe>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,400 @@
+@use "variables" as *;
+@use "fonts" as *;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin shared-button-styles {
+  @include inter(600, 1.6rem, 2.4rem);
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+}
+
+@mixin brown-button(
+  $width: 14.3rem,
+  $height: auto,
+  $bg-color: $base-brown,
+  $font-size: 1.6rem
+) {
+  @include shared-button-styles;
+  width: $width;
+  height: $height;
+  color: $base-white;
+  background-color: $bg-color;
+  border: none;
+  font-size: $font-size;
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+  &:hover {
+    background: $hover-brown;
+  }
+}
+
+@mixin clear-button($width: 15.5rem, $height: auto, $color: $base-brown) {
+  @include shared-button-styles;
+  width: $width;
+  height: $height;
+  background: none;
+  border: 2px solid $color;
+  color: $color;
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+  &:hover {
+    background-color: $color;
+    color: $base-white;
+  }
+}
+@mixin gray-button {
+  @include inter(500, 1.4rem, 2rem, $font-gray-51);
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  &:hover {
+    background: $hover-brown;
+    color: $base-white;
+  }
+}
+@mixin common-h {
+  @include playfair(700, 3.6rem, 4rem, $base-brown);
+}
+
+//header
+@mixin active-hover {
+  color: $base-brown;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $hover-yellow;
+  }
+}
+
+@mixin a-hover {
+  @include inter(500, 1.4rem, 2rem, $font-gray-63, 0.01rem);
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $base-brown;
+  }
+}
+
+//cards
+@mixin categories-card {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    width: 100%;
+    height: 25.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 10%),
+      0px 4px 6px -4px rgba(0, 0, 0, 10%);
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.8rem;
+      transition: transform 0.4s ease;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 10%),
+        0px 8px 10px -6px rgba(0, 0, 0, 10%);
+
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  h4 {
+    @include playfair(600, 2rem, 2.8rem, $base-brown);
+    padding-top: 1.6rem;
+  }
+  p {
+    @include inter(400, 1.6rem, 2.4rem, $font-gray-63, 0.01rem);
+    padding-top: 0.8rem;
+  }
+}
+
+@mixin pastrie-card {
+  width: 100%;
+  max-width: 38.4rem;
+  height: auto;
+  border-radius: 0.8rem;
+  background: $base-white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 10%),
+    0px 4px 6px -4px rgba(0, 0, 0, 10%);
+
+  .past-img {
+    width: 100%;
+    height: 25.6rem;
+    position: relative;
+    .sticker {
+      position: absolute;
+      // width: 6.1rem;
+      height: 2.4rem;
+      border-radius: 0.6rem;
+      padding: 0.4rem 0.8rem;
+      background: $hover-yellow;
+      @include inter(600, 1.2rem, 1.6rem, $base-white);
+      z-index: 999;
+      left: calc(100% - 6.1rem - 1.1rem);
+      top: 1rem;
+      &.new {
+        background: $bg-red;
+        left: calc(100% - 4.1rem - 1.1rem);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.8rem 0.8rem 0 0;
+    }
+  }
+
+  .past-desc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 2.4rem;
+
+    h4 {
+      @include playfair(600, 2rem, 2.8rem, $base-brown);
+    }
+    p {
+      @include inter(400, 1.6rem, 2.4rem, $font-gray-63, 0.01rem);
+    }
+    div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 0.8rem;
+
+      span {
+        @include inter(700, 2.4rem, 3.2rem, $base-brown, 0.015rem);
+      }
+      button {
+        @include brown-button(12rem, 4rem, $base-brown);
+        @include inter(400, 1.6rem, 2.4rem, $base-white);
+      }
+    }
+  }
+}
+
+@mixin review-card {
+  width: 100%;
+  max-width: 38.4rem;
+  height: auto;
+  border-radius: 0.8rem;
+  background: $base-white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 10%),
+    0px 4px 6px -4px rgba(0, 0, 0, 10%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3.2rem;
+
+  .person {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+
+    .pers-mg {
+      width: 6.4rem;
+      height: 4.8rem;
+      padding-right: 1.6rem;
+
+      img {
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 999.9rem;
+      }
+    }
+
+    .name-stars {
+      width: 100%;
+      max-width: 11.6rem;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        @include inter(600, 1.6rem, 2.4rem, $base-brown);
+      }
+
+      .stars {
+        width: 100%;
+        padding: 0.4rem 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0.45rem;
+
+        img {
+          width: 1.8rem;
+          height: 1.6rem;
+        }
+      }
+    }
+  }
+
+  p {
+    @include inter(400, 1.6rem, 2.4rem, $font-gray-63, 0.005rem);
+  }
+}
+
+@mixin footer-item {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  h3,
+  h2 {
+    color: $base-white;
+  }
+
+  h3 {
+    @include playfair(700, 2.4rem, 3.2rem, $base-white);
+  }
+
+  h2 {
+    @include inter(600, 1.8rem, 2.8rem, $base-white);
+  }
+
+  p,
+  nav ul li a,
+  .contact-cont div {
+    @include inter(400, 1.6rem, 2.4rem, $font-gray-db);
+  }
+
+  p,
+  .contact-cont div {
+    letter-spacing: 0.01rem;
+  }
+
+  .social-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+
+    .social {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      height: 2rem;
+      transition: all 0.3s ease;
+
+      &.fb {
+        width: 2rem;
+        background-image: url("../../img/svg/fb.svg");
+        &:hover {
+          background-image: url("../../img/svg/fb-hover.svg");
+        }
+      }
+
+      &.inst {
+        width: 1.75rem;
+        background-image: url("../../img/svg/instagram.svg");
+        &:hover {
+          background-image: url("../../img/svg/instagram-hover.svg");
+        }
+      }
+
+      &.twit {
+        width: 2rem;
+        background-image: url("../../img/svg/twitter.svg");
+        &:hover {
+          background-image: url("../../img/svg/twitter-hover.svg");
+        }
+      }
+    }
+  }
+
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .contact-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 0.8rem;
+      align-items: center;
+      flex-wrap: wrap;
+      .break {
+        display: none;
+      }
+
+      &.address {
+        gap: 0;
+      }
+
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+
+        &.loc {
+          width: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@mixin header-frame {
+  max-width: 144rem;
+  width: 100%;
+  height: 6.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 5%);
+}
+@mixin footer-frame {
+  max-width: 144rem;
+  width: 100%;
+  min-height: 34.9rem;
+  height: auto;
+}
