@@ -6,7 +6,7 @@ It offers a beautifully designed and fully responsive experience that highlights
 ---
 
 ## 🌟 Live Preview
-Coming soon: [https://mariamsvanidze0.github.io/artisan-pastries/](https://mariamsvanidze0.github.io/artisan-pastries/)
+ [https://mariamsvanidze0.github.io/artisan-pastries/](https://mariamsvanidze0.github.io/artisan-pastries/)
 
 ---
 
