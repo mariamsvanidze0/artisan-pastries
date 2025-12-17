@@ -1,6 +1,6 @@
 # 🍰 Sweet Delights – Artisan Pastries
 
-**Sweet Delights** is a handcrafted, multi-page artisan pastry website built with **HTML**, **Sass**, and **vanilla JavaScript**.  
+**Sweet Delights** is a handcrafted, multi-page artisan pastry website built with **HTML** and **Sass**.  
 It offers a beautifully designed and fully responsive experience that highlights a modern bakery brand — from its main landing page to its pastry catalog and detailed product pages.
 
 ---
